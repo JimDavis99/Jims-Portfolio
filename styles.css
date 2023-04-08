@@ -6,6 +6,7 @@
 
 html {
   scroll-behavior: smooth;
+  width: 100%;
 }
 
 body {
@@ -67,9 +68,9 @@ a:hover {
   text-align: center;
   padding: 200px 0px;
   border-color: aqua;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   z-index: 1;
-  
 }
 
 #Projects {
@@ -151,6 +152,7 @@ img {
   justify-content: space-evenly;
   display: flex;
   transition: transform 0.1s ease-in-out;
+  align-items: center;
 }
 
 #project-tile {
@@ -225,16 +227,15 @@ h2 {
 }
 
 .contact-section {
-  display: flex;
-  flex-direction: row;
+  max-width: 100%;
+  overflow: hidden;
+  display: block;
   justify-content: center;
-  align-items: center;
-  color: white;
-  gap: 40px;
+  height: 500px
 }
 
 .contact-info {
-  margin-top: 10px;
+  margin: 10px 10px;
   text-align: center;
 }
 
@@ -243,5 +244,23 @@ footer {
   height: 40px;
   color: white;
   text-align: center;
+  margin-top: 300px;
   padding: 10px;
+}
+
+section {
+  width: 100%;
+}
+
+#email-contact, #linkedin-contact, #github-contact {
+  width: 40px;
+  height: auto;
+  margin: 20px auto;
+  background-color: aqua;
+  border-style: solid;
+  border-color: aqua;
+  justify-content: center;
+  transition: transform 0.1s ease-in-out;
+  align-items: center;
+  margin-bottom: 40px
 }
