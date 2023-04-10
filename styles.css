@@ -167,12 +167,14 @@ img {
   background-color: rgb(36, 36, 36);
   border: solid orange;
   transition: transform 0.1s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out, transform 0.1s ease-in-out;
 }
 
 #project-tile:hover {
   box-shadow: 5px 5px 45px orange;
   transform: scale(1.04);
   z-index: 1;
+  opacity: 1;
 }
 
 .project-list {
