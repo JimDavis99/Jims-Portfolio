@@ -168,13 +168,13 @@ img {
   border: solid orange;
   transition: transform 0.1s ease-in-out;
   transition: box-shadow 0.2s ease-in-out, transform 0.1s ease-in-out;
+  position: relative;
 }
 
 #project-tile:hover {
   box-shadow: 5px 5px 45px orange;
   transform: scale(1.04);
   z-index: 1;
-  opacity: 1;
 }
 
 .project-list {
@@ -190,7 +190,7 @@ img {
 }
 
 /* Media query for smaller screens */
-@media (max-width: 1250px) {
+@media (max-width: 1223px) {
   .project-list {
     grid-template-columns: repeat(2, 1fr); /* Change to 2 columns */
     grid-gap: 50px; /* Update the grid-gap value */
@@ -198,7 +198,7 @@ img {
 }
 
 /* Media query for even smaller screens */
-@media (max-width: 810px) {
+@media (max-width: 800px) {
   .project-list {
     grid-template-columns: repeat(1, 1fr); /* Change to 1 column */
     grid-gap: 50px; /* Update the grid-gap value */
@@ -221,7 +221,7 @@ img {
   padding: 25px 0px 25px 0px;
 }
 
-#project-tile:hover::after {
+#project-tile::after {
   content: "";
   position: absolute;
   top: 0;
@@ -231,7 +231,12 @@ img {
   background: rgba(0, 0, 0, 0.85); /* adjust the opacity to control the blur effect */
   backdrop-filter: blur(5px); /* adjust the blur amount as desired */
   z-index: 3;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
 
+#project-tile:hover::after {
+  opacity: 1; /* update opacity to 1 on hover */
 }
 
 .project-description {
