@@ -188,7 +188,7 @@ img {
 }
 
 /* Media query for smaller screens */
-@media (max-width: 1223px) {
+@media (max-width: 1250px) {
   .project-list {
     grid-template-columns: repeat(2, 1fr); /* Change to 2 columns */
     grid-gap: 50px; /* Update the grid-gap value */
@@ -196,7 +196,7 @@ img {
 }
 
 /* Media query for even smaller screens */
-@media (max-width: 800px) {
+@media (max-width: 810px) {
   .project-list {
     grid-template-columns: repeat(1, 1fr); /* Change to 1 column */
     grid-gap: 50px; /* Update the grid-gap value */
